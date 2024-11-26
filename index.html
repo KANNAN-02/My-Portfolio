@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+      <nav id="desktop-nav">
+          <div class="logo"><b>GOKULA KANNAN S</b></div>
+          <div>
+              <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#education">Education & Qualification</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#cert">Certification</a></li>                 
+                  <li><a href="#hobbies">Hobbies</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+      <nav id="hamburger-nav">
+          <div class="logo">GOKULA KANNAN S</div>
+          <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+              <div class="menu-links">
+                  <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                  <li><a href="#education" onclick="toggleMenu()">Education & Qualification</a></li>
+                  <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                  <li><a href="#cert" onclick="toggleMenu()">Certification</a></li>
+                  <li><a href="#hobbies" onclick="toggleMenu()">Hobbies</a></li>
+                  <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+              </div>
+          </div>
+      </nav>
+      <section id="profile">
+          <div class="section__pic-container">
+              <img src="./assets/profile.png" alt=" profile" />
+          </div>
+          <div class="section__text">
+              <p class="section__text__p1">Hello, I'm</p>
+              <h1 class="title">GOKULA KANNAN S</h1>
+              <p class="section__text__p2">Full Stack Developer</p>
+              <div class="btn-container">
+                  <button class="btn btn-color-2"
+                          onclick="window.open('./assets/resume-example.pdf')">
+                      Download Resume
+                  </button>
+
+              </div>
+              <div id="socials-container">
+                  <img src="./assets/linkedin.png"
+                       alt="My LinkedIn profile"
+                       class="icon"
+                       onclick="location.href='https://www.linkedin.com/in/kannan-s-2b6117227?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTAi8%2F5CyRYCiuc0LosGqVA%3D%3D'" />
+
+              </div>
+          </div>
+      </section>
+      <section id="about">
+          <p class="section__text__p1">Get To Know More</p>
+          <h1 class="title">About Me</h1>
+         
+              <div class="about-details-container">
+                  <div class="about-containers">
+                      <div class="details-container">
+                          <img src="./assets/experience.png"
+                               alt="Experience icon"
+                               class="icon" />
+                          <h3>Fresher</h3>
+                          <p>FullStack Development</p>
+                      </div>
+                      <div class="details-container">
+                          <img src="./assets/education.png"
+                               alt="Education icon"
+                               class="icon" />
+                          <h3>Education</h3>
+                          <p>B.Tech - Artificial Intelligence & Data Science</p>
+                      </div>
+
+                  </div>
+                  <div class="text-container">
+                      <p>
+                        A passionate and dedicated full stack developer with a strong foundation in both front-end and back-end technologies. 
+                        Seeking an entry-level position to contribute to impactful projects while growing my skills in a collaborative and dynamic environment.
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+        </section>
+        <section id="education">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Education & Qualification</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">2023 - 2026</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png"
+                                     alt="Experience icon"
+                                     class="icon" />
+                                <div>
+                                    <h3>
+                                        B.Tech - AI&DS <br>
+                                        Karpagam Academy Of Higher Eduction
+                                    </h3>
+                                    <p> Deemed to be University <br>
+                                        7.13 CGPA  (Pursuing) </p>
+                                </div>
+                                </div>
+                            </article> 
+                              
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">2018 - 2021</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png"
+                                     alt="Experience icon"
+                                     class="icon" />
+                                <div>
+                                    <h3>
+                                        Diploma - EEE <br>
+                                        Govt Polytechnic Colloge Kaniyalampatti
+                                    </h3>
+                                    <p> DOTE <br>
+                                        75% </p>
+                                </div>
+                            </article>
+
+
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">2017 - 2018</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png"
+                                     alt="Experience icon"
+                                     class="icon" />
+                                <div>
+                                    <h3>
+                                        SSLC <br>
+                                        KSV Hr.Sec.School, Thulasikodumbu
+                                    </h3>
+                                    <p> Tamil Nadu State Board <br>
+                                        66% </p>
+                                </div>
+                            </article>        
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+      </section>
+      <section id="skills"><br><br><br><br>
+          <p class="section__text__p1">Explore My</p>
+          <h1 class="title">Skills</h1>
+          <div class="experience-details-container">
+              <div class="about-containers">
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">Development</h2>
+                      <div class="article-container">
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>C</h3>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>PYTHON</h3>
+                                  
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>HTML</h3>
+                                  
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>CSS</h3>
+                                  
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>JAVA SCRIPT</h3>
+                                  
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>EXCEL</h3>
+                                  
+                              </div>
+                          </article>
+
+                      </div>
+                  </div>
+                  <div class="details-container">
+                      <h2 class="experience-sub-title"> Tools</h2>
+                      <div class="article-container">
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Visual Studio</h3>
+                                 
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Visual Code</h3>
+                                  
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Git</h3>
+                                 
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>EXCEL</h3>
+                                  
+                              </div>
+                          </article>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </section>
+      <section id="cert">
+          <p class="section__text__p1">Explore My</p>
+          <h1 class="title">Certifications</h1>
+          <div class="experience-details-container">
+              <div class="about-containers">
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">Front End Development - HTML</h2>
+                      <div class="article-container">
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3> Great Learning Academy </h3>
+
+                              </div>
+                          </article>
+
+
+
+                      </div>
+                  </div>
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">Front End Development - CSS</h2>
+                      <div class="article-container">
+
+
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3> Great Learning Academy </h3>
+
+                              </div>
+                          </article>
+                      </div>
+                  </div>
+
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">  </h2>
+                      <div class="article-container">
+
+
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>
+
+                                  </h3>
+
+                              </div>
+                          </article>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+      </section>
+      <section id="hobbies">
+          <p class="section__text__p1">My Interests </p>
+          <h1 class="title">Hobbies</h1>
+          <div class="experience-details-container">
+              <div class="about-containers">
+                  <div class="details-container color-container">
+                      <div class="article-container">
+                          <img src="./assets/project-1.jpg"
+                               alt="Project 3"
+                               class="project-img" />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Business</h2>
+                      <div class="btn-container">
+                          <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://www.instagram.com/e_xerox_?igsh=ajc2NzI1ejk4enM4'">
+                              Page 1
+                          </button>
+                      </div>
+                  </div>
+
+                 
+      </section>
+
+      <section id="contact">
+          <p class="section__text__p1">Get in Touch</p>
+          <h1 class="title">Contact Me</h1>
+          <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+                  <img src="./assets/email.png"
+                       alt="Email icon"
+                       class="icon contact-icon email-icon" />
+                  <p><a href="mailto:mr.kannan5901@gmail.com">mr.kannan5901@gmail.com</a></p>
+              </div>
+              <div class="contact-info-container">
+                  <img src="./assets/linkedin.png"
+                       alt="LinkedIn icon"
+                       class="icon contact-icon" />
+                  <p><a href="https://www.linkedin.com/in/kannan-s-2b6117227?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWD554UR3S4yIhc1OyrXVMg%3D%3D">LinkedIn</a></p>
+              </div>
+          </div>
+      </section>
+      <footer>
+          <nav>
+              <div class="nav-links-container">
+                  <ul class="nav-links">
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#education">Education & Qualification</a></li>
+                      <li><a href="#skills">Skills</a></li>
+                      <li><a href="#cert">Certification</a></li>
+                      <li><a href="#hobbies">Hobbies</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                  </ul>
+              </div>
+          </nav>
+          <p>Copyright 2024 Kannan. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+  </body>
+</html>
